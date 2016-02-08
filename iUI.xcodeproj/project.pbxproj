@@ -17,6 +17,13 @@
 		BA22B31F1C57D06900F1058E /* FruitListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B31E1C57D06900F1058E /* FruitListTableViewController.swift */; };
 		BA22B3211C57D25200F1058E /* FruitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B3201C57D25200F1058E /* FruitTableViewCell.swift */; };
 		BA22B3231C57D3E500F1058E /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B3221C57D3E500F1058E /* Fruit.swift */; };
+		BA32A7221C68EA99002AB4DB /* TreesCatalog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7211C68EA99002AB4DB /* TreesCatalog.storyboard */; };
+		BA32A7241C68ECB7002AB4DB /* TreesCatalogPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32A7231C68ECB7002AB4DB /* TreesCatalogPageViewController.swift */; };
+		BA32A7261C68F4E5002AB4DB /* TreesCatalogContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32A7251C68F4E5002AB4DB /* TreesCatalogContentViewController.swift */; };
+		BA32A72B1C68FB78002AB4DB /* ipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7271C68FB78002AB4DB /* ipe.jpg */; };
+		BA32A72C1C68FB78002AB4DB /* felicidade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7281C68FB78002AB4DB /* felicidade.jpg */; };
+		BA32A72D1C68FB78002AB4DB /* pessego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7291C68FB78002AB4DB /* pessego.jpg */; };
+		BA32A72E1C68FB78002AB4DB /* araucaria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A72A1C68FB78002AB4DB /* araucaria.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		BA22B31E1C57D06900F1058E /* FruitListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitListTableViewController.swift; sourceTree = "<group>"; };
 		BA22B3201C57D25200F1058E /* FruitTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitTableViewCell.swift; sourceTree = "<group>"; };
 		BA22B3221C57D3E500F1058E /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		BA32A7211C68EA99002AB4DB /* TreesCatalog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TreesCatalog.storyboard; sourceTree = "<group>"; };
+		BA32A7231C68ECB7002AB4DB /* TreesCatalogPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreesCatalogPageViewController.swift; sourceTree = "<group>"; };
+		BA32A7251C68F4E5002AB4DB /* TreesCatalogContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreesCatalogContentViewController.swift; sourceTree = "<group>"; };
+		BA32A7271C68FB78002AB4DB /* ipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipe.jpg; sourceTree = "<group>"; };
+		BA32A7281C68FB78002AB4DB /* felicidade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = felicidade.jpg; sourceTree = "<group>"; };
+		BA32A7291C68FB78002AB4DB /* pessego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pessego.jpg; sourceTree = "<group>"; };
+		BA32A72A1C68FB78002AB4DB /* araucaria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = araucaria.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +78,10 @@
 		BA22B3031C57A98B00F1058E /* iUI */ = {
 			isa = PBXGroup;
 			children = (
-				BA22B3041C57A98B00F1058E /* AppDelegate.swift */,
 				BA22B3081C57A98B00F1058E /* Main.storyboard */,
-				BA22B30B1C57A98B00F1058E /* Assets.xcassets */,
-				BA22B30D1C57A98B00F1058E /* LaunchScreen.storyboard */,
-				BA22B3101C57A98B00F1058E /* Info.plist */,
 				BA22B3181C57B04D00F1058E /* Fruit List */,
+				BA32A7201C68EA7F002AB4DB /* Trees Catalog */,
+				BA32A71F1C68EA70002AB4DB /* Support Files */,
 			);
 			path = iUI;
 			sourceTree = "<group>";
@@ -93,6 +105,39 @@
 				BA22B3191C57CA6B00F1058E /* Watermelon.jpg */,
 			);
 			name = "Fruit Images";
+			sourceTree = "<group>";
+		};
+		BA32A71F1C68EA70002AB4DB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA22B30D1C57A98B00F1058E /* LaunchScreen.storyboard */,
+				BA22B30B1C57A98B00F1058E /* Assets.xcassets */,
+				BA22B3041C57A98B00F1058E /* AppDelegate.swift */,
+				BA22B3101C57A98B00F1058E /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		BA32A7201C68EA7F002AB4DB /* Trees Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				BA32A72F1C68FB7B002AB4DB /* Trees Images */,
+				BA32A7211C68EA99002AB4DB /* TreesCatalog.storyboard */,
+				BA32A7231C68ECB7002AB4DB /* TreesCatalogPageViewController.swift */,
+				BA32A7251C68F4E5002AB4DB /* TreesCatalogContentViewController.swift */,
+			);
+			name = "Trees Catalog";
+			sourceTree = "<group>";
+		};
+		BA32A72F1C68FB7B002AB4DB /* Trees Images */ = {
+			isa = PBXGroup;
+			children = (
+				BA32A7271C68FB78002AB4DB /* ipe.jpg */,
+				BA32A7281C68FB78002AB4DB /* felicidade.jpg */,
+				BA32A7291C68FB78002AB4DB /* pessego.jpg */,
+				BA32A72A1C68FB78002AB4DB /* araucaria.jpg */,
+			);
+			name = "Trees Images";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +198,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA32A72D1C68FB78002AB4DB /* pessego.jpg in Resources */,
 				BA22B30F1C57A98B00F1058E /* LaunchScreen.storyboard in Resources */,
 				BA22B31A1C57CA6C00F1058E /* Watermelon.jpg in Resources */,
 				BA22B3171C57B04000F1058E /* FruitList.storyboard in Resources */,
 				BA22B31D1C57D01400F1058E /* Peach.jpg in Resources */,
+				BA32A72C1C68FB78002AB4DB /* felicidade.jpg in Resources */,
+				BA32A72B1C68FB78002AB4DB /* ipe.jpg in Resources */,
 				BA22B30C1C57A98B00F1058E /* Assets.xcassets in Resources */,
 				BA22B30A1C57A98B00F1058E /* Main.storyboard in Resources */,
+				BA32A72E1C68FB78002AB4DB /* araucaria.jpg in Resources */,
+				BA32A7221C68EA99002AB4DB /* TreesCatalog.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +221,9 @@
 			files = (
 				BA22B3231C57D3E500F1058E /* Fruit.swift in Sources */,
 				BA22B31F1C57D06900F1058E /* FruitListTableViewController.swift in Sources */,
+				BA32A7261C68F4E5002AB4DB /* TreesCatalogContentViewController.swift in Sources */,
 				BA22B3211C57D25200F1058E /* FruitTableViewCell.swift in Sources */,
+				BA32A7241C68ECB7002AB4DB /* TreesCatalogPageViewController.swift in Sources */,
 				BA22B3051C57A98B00F1058E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +374,7 @@
 				BA22B3151C57A98B00F1058E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
