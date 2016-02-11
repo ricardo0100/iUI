@@ -30,14 +30,31 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y6N-KM-9Xf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBu-ab-Yry">
+                                <rect key="frame" x="0.0" y="269" width="320" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="0.7518084491" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Tap to close"/>
+                                <connections>
+                                    <action selector="close:" destination="nR6-0w-wyz" eventType="touchUpInside" id="keB-1e-zk2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kBu-ab-Yry" secondAttribute="trailing" id="3U6-do-S5W"/>
                             <constraint firstAttribute="trailing" secondItem="Y6N-KM-9Xf" secondAttribute="trailing" id="3tP-MH-od7"/>
                             <constraint firstItem="Y6N-KM-9Xf" firstAttribute="top" secondItem="rsh-6y-fCe" secondAttribute="top" id="CZz-Mb-Hzb"/>
                             <constraint firstItem="wB0-hW-ARn" firstAttribute="top" secondItem="Y6N-KM-9Xf" secondAttribute="bottom" id="Dho-BX-Noe"/>
+                            <constraint firstItem="kBu-ab-Yry" firstAttribute="centerY" secondItem="rsh-6y-fCe" secondAttribute="centerY" id="R84-Ue-9Qa"/>
+                            <constraint firstItem="kBu-ab-Yry" firstAttribute="centerX" secondItem="rsh-6y-fCe" secondAttribute="centerX" id="ecK-WI-bRU"/>
+                            <constraint firstItem="kBu-ab-Yry" firstAttribute="leading" secondItem="rsh-6y-fCe" secondAttribute="leading" id="pCT-4O-LFB"/>
                             <constraint firstItem="Y6N-KM-9Xf" firstAttribute="leading" secondItem="rsh-6y-fCe" secondAttribute="leading" id="xNC-KW-que"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ecK-WI-bRU"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>

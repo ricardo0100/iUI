@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1oz-YM-Odt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zc6-zn-MMz">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--iUI-->
         <scene sceneID="Lfq-qd-kZN">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="Ob3-F3-omM" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="s5F-sX-wO2" kind="show" id="ObD-Ua-Cd1"/>
+                                            <segue destination="s5F-sX-wO2" kind="presentation" id="ObD-Ua-Cd1"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="80" id="Sjv-nj-kAx">
@@ -83,6 +83,39 @@
                                             <segue destination="XNP-BJ-TPX" kind="show" id="mgt-1g-OkL"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="80" id="5P1-jM-Bha">
+                                        <rect key="frame" x="0.0" y="224" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5P1-jM-Bha" id="Et0-1I-AGE">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIPresentationController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOQ-Tm-byo">
+                                                    <rect key="frame" x="8" y="8" width="304" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.21433165015243902" green="0.66075410275924495" blue="0.18546115189063839" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big alert view to show big alert messages with blur effect" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nf-yq-QoD">
+                                                    <rect key="frame" x="8" y="37" width="304" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oOQ-Tm-byo" firstAttribute="leading" secondItem="Et0-1I-AGE" secondAttribute="leadingMargin" id="9ai-4W-jPW"/>
+                                                <constraint firstItem="2Nf-yq-QoD" firstAttribute="top" secondItem="oOQ-Tm-byo" secondAttribute="bottom" constant="8" id="Bf8-6R-zid"/>
+                                                <constraint firstItem="oOQ-Tm-byo" firstAttribute="trailing" secondItem="Et0-1I-AGE" secondAttribute="trailingMargin" id="Cmj-Bu-gjI"/>
+                                                <constraint firstItem="2Nf-yq-QoD" firstAttribute="leading" secondItem="Et0-1I-AGE" secondAttribute="leadingMargin" id="Esa-cJ-eVs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2Nf-yq-QoD" secondAttribute="trailing" id="hOr-fM-pBq"/>
+                                                <constraint firstItem="oOQ-Tm-byo" firstAttribute="top" secondItem="Et0-1I-AGE" secondAttribute="topMargin" id="n67-e0-AXN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KOf-SS-W7Q" kind="show" id="bEx-EC-aQ7"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -91,12 +124,12 @@
                             <outlet property="delegate" destination="Ob3-F3-omM" id="zWW-tA-bqe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vaB-kD-rfa"/>
+                    <navigationItem key="navigationItem" title="iUI" id="vaB-kD-rfa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yIt-WO-LpY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-215"/>
+            <point key="canvasLocation" x="1145" y="-215"/>
         </scene>
         <!--FruitList-->
         <scene sceneID="9AT-Xk-WTr">
@@ -104,7 +137,15 @@
                 <viewControllerPlaceholder storyboardName="FruitList" id="XNP-BJ-TPX" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsZ-Wu-Wju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674.5" y="-215"/>
+            <point key="canvasLocation" x="1547.5" y="-416"/>
+        </scene>
+        <!--BigAlertView-->
+        <scene sceneID="LwX-hp-5BM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BigAlertView" id="KOf-SS-W7Q" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="quc-r1-4Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1561.5" y="-244"/>
         </scene>
         <!--TreesCatalog-->
         <scene sceneID="71q-Uv-k9L">
@@ -112,12 +153,13 @@
                 <viewControllerPlaceholder storyboardName="TreesCatalog" id="s5F-sX-wO2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zmw-6m-Eny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674.5" y="-316"/>
+            <point key="canvasLocation" x="1562.5" y="-329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBR-Jj-a3T">
             <objects>
                 <navigationController id="zc6-zn-MMz" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vfz-ek-Qfo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -128,19 +170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ada-gG-ANW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="-215"/>
-        </scene>
-        <!--Split View Controller-->
-        <scene sceneID="Omf-9e-JMP">
-            <objects>
-                <splitViewController id="1oz-YM-Odt" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="zc6-zn-MMz" kind="relationship" relationship="masterViewController" id="Z6E-6D-iSb"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L5W-qw-RzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-112" y="-215"/>
+            <point key="canvasLocation" x="708" y="-215"/>
         </scene>
     </scenes>
 </document>

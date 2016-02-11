@@ -9,6 +9,13 @@
 import UIKit
 
 class TreesCatalogContentViewController: UIViewController {
+
+    @IBAction func close(sender: AnyObject) {
+        pageViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    var pageViewController: TreesCatalogPageViewController?
+    
     @IBOutlet weak var treePhotoImageView: UIImageView!
 
     var treePhoto: String?
@@ -20,4 +27,5 @@ class TreesCatalogContentViewController: UIViewController {
         let image = UIImage(named: treePhoto!)
         treePhotoImageView.image = image
     }
+    
 }

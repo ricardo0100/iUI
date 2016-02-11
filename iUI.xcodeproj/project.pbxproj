@@ -24,6 +24,7 @@
 		BA32A72C1C68FB78002AB4DB /* felicidade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7281C68FB78002AB4DB /* felicidade.jpg */; };
 		BA32A72D1C68FB78002AB4DB /* pessego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7291C68FB78002AB4DB /* pessego.jpg */; };
 		BA32A72E1C68FB78002AB4DB /* araucaria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A72A1C68FB78002AB4DB /* araucaria.jpg */; };
+		BAF003F91C6C973A00D121C8 /* BigAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		BA32A7281C68FB78002AB4DB /* felicidade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = felicidade.jpg; sourceTree = "<group>"; };
 		BA32A7291C68FB78002AB4DB /* pessego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pessego.jpg; sourceTree = "<group>"; };
 		BA32A72A1C68FB78002AB4DB /* araucaria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = araucaria.jpg; sourceTree = "<group>"; };
+		BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BigAlertView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +80,10 @@
 		BA22B3031C57A98B00F1058E /* iUI */ = {
 			isa = PBXGroup;
 			children = (
-				BA22B3081C57A98B00F1058E /* Main.storyboard */,
-				BA22B3181C57B04D00F1058E /* Fruit List */,
 				BA32A7201C68EA7F002AB4DB /* Trees Catalog */,
+				BA22B3181C57B04D00F1058E /* Fruit List */,
+				BAF003F71C6C971100D121C8 /* BigAlertView */,
+				BA22B3081C57A98B00F1058E /* Main.storyboard */,
 				BA32A71F1C68EA70002AB4DB /* Support Files */,
 			);
 			path = iUI;
@@ -138,6 +141,14 @@
 				BA32A72A1C68FB78002AB4DB /* araucaria.jpg */,
 			);
 			name = "Trees Images";
+			sourceTree = "<group>";
+		};
+		BAF003F71C6C971100D121C8 /* BigAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */,
+			);
+			name = BigAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				BA32A72D1C68FB78002AB4DB /* pessego.jpg in Resources */,
 				BA22B30F1C57A98B00F1058E /* LaunchScreen.storyboard in Resources */,
 				BA22B31A1C57CA6C00F1058E /* Watermelon.jpg in Resources */,
+				BAF003F91C6C973A00D121C8 /* BigAlertView.storyboard in Resources */,
 				BA22B3171C57B04000F1058E /* FruitList.storyboard in Resources */,
 				BA22B31D1C57D01400F1058E /* Peach.jpg in Resources */,
 				BA32A72C1C68FB78002AB4DB /* felicidade.jpg in Resources */,

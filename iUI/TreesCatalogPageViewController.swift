@@ -9,7 +9,7 @@
 import UIKit
 
 class TreesCatalogPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-
+    
     var currentPageIndex = 0
     var goingToPageIndex = 0
     
@@ -22,9 +22,8 @@ class TreesCatalogPageViewController: UIPageViewController, UIPageViewController
         let vc = viewControllerAtIndex(currentPageIndex)
         let vcs = [vc!]
         setViewControllers(vcs, direction: .Forward, animated: true, completion: nil)
-        navigationController!.setNavigationBarHidden(true, animated: true)
     }
-
+    
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         return viewControllerAtIndex(currentPageIndex + 1)
     }
@@ -41,6 +40,7 @@ class TreesCatalogPageViewController: UIPageViewController, UIPageViewController
         let vc = storyboard!.instantiateViewControllerWithIdentifier("TreesCatalogContentViewController") as! TreesCatalogContentViewController
         vc.treePhoto = treesList[index]
         vc.treeIndex = index
+        vc.pageViewController = self
         return vc
     }
     
@@ -49,4 +49,5 @@ class TreesCatalogPageViewController: UIPageViewController, UIPageViewController
             currentPageIndex = goingToPageIndex
         }
     }
+    
 }
