@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Big Alert View Root View Controller-->
         <scene sceneID="lH5-m8-BFm">
             <objects>
-                <viewController id="jMM-bF-Hpq" sceneMemberID="viewController">
+                <viewController id="jMM-bF-Hpq" customClass="BigAlertViewRootViewController" customModule="iUI" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AKK-aB-ffJ"/>
                         <viewControllerLayoutGuide type="bottom" id="98J-sO-29y"/>
@@ -16,14 +16,78 @@
                     <view key="view" contentMode="scaleToFill" id="n15-lc-qwF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72F-Nd-Obs">
+                                <rect key="frame" x="111" y="269" width="98" height="30"/>
+                                <state key="normal" title="Tap to Launch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchPopover:" destination="jMM-bF-Hpq" eventType="touchUpInside" id="Zqm-bg-hMb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2143316502" green="0.66075410280000002" blue="0.18546115190000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="72F-Nd-Obs" firstAttribute="centerY" secondItem="n15-lc-qwF" secondAttribute="centerY" id="EkN-t8-mTx"/>
+                            <constraint firstItem="72F-Nd-Obs" firstAttribute="centerX" secondItem="n15-lc-qwF" secondAttribute="centerX" id="PWC-8t-yuV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sYQ-yS-z7E"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwX-0O-1NV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="365" y="353"/>
+        </scene>
+        <!--Big Alert View Controller-->
+        <scene sceneID="zau-17-88z">
+            <objects>
+                <viewController storyboardIdentifier="BigAlertViewController" id="yYo-Mu-PFf" customClass="BigAlertViewController" customModule="iUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4eZ-1Y-XyR"/>
+                        <viewControllerLayoutGuide type="bottom" id="h4y-EN-xmu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8gl-tc-727">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Riz-UK-sIK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="LKD-8r-xtp">
+                            <connections>
+                                <action selector="closePopover:" destination="yYo-Mu-PFf" id="wjt-Xm-g1o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zg0-67-k3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1339" y="353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ddk-2X-mEv">
+            <objects>
+                <navigationController storyboardIdentifier="BigAlertNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="xrY-Br-nvn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="rMC-xb-LLV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.2143316502" green="0.66075410280000002" blue="0.18546115190000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yYo-Mu-PFf" kind="relationship" relationship="rootViewController" id="FWB-Eh-Hjd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLr-T8-Yhq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="353"/>
         </scene>
     </scenes>
 </document>

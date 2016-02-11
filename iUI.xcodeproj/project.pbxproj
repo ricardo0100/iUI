@@ -25,6 +25,8 @@
 		BA32A72D1C68FB78002AB4DB /* pessego.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A7291C68FB78002AB4DB /* pessego.jpg */; };
 		BA32A72E1C68FB78002AB4DB /* araucaria.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA32A72A1C68FB78002AB4DB /* araucaria.jpg */; };
 		BAF003F91C6C973A00D121C8 /* BigAlertView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */; };
+		BAF003FB1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF003FA1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift */; };
+		BAF003FD1C6CB8A700D121C8 /* BigAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF003FC1C6CB8A700D121C8 /* BigAlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		BA32A7291C68FB78002AB4DB /* pessego.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pessego.jpg; sourceTree = "<group>"; };
 		BA32A72A1C68FB78002AB4DB /* araucaria.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = araucaria.jpg; sourceTree = "<group>"; };
 		BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BigAlertView.storyboard; sourceTree = "<group>"; };
+		BAF003FA1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigAlertViewRootViewController.swift; sourceTree = "<group>"; };
+		BAF003FC1C6CB8A700D121C8 /* BigAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigAlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				BAF003F81C6C973A00D121C8 /* BigAlertView.storyboard */,
+				BAF003FA1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift */,
+				BAF003FC1C6CB8A700D121C8 /* BigAlertViewController.swift */,
 			);
 			name = BigAlertView;
 			sourceTree = "<group>";
@@ -231,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF003FD1C6CB8A700D121C8 /* BigAlertViewController.swift in Sources */,
 				BA22B3231C57D3E500F1058E /* Fruit.swift in Sources */,
+				BAF003FB1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift in Sources */,
 				BA22B31F1C57D06900F1058E /* FruitListTableViewController.swift in Sources */,
 				BA32A7261C68F4E5002AB4DB /* TreesCatalogContentViewController.swift in Sources */,
 				BA22B3211C57D25200F1058E /* FruitTableViewCell.swift in Sources */,
