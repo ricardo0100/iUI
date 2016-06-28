@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AVy-4m-uO3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Question Root View Controller-->
+        <scene sceneID="yF6-dl-H3o">
+            <objects>
+                <viewController id="AVy-4m-uO3" customClass="QuestionRootViewController" customModule="iUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zI9-v7-oDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="o2C-76-16t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fds-KW-t2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8S-Is-uUQ">
+                                <rect key="frame" x="130" y="269" width="60" height="30"/>
+                                <state key="normal" title="Tap here"/>
+                                <connections>
+                                    <segue destination="Cit-Yb-7Hg" kind="custom" customClass="WindowSegue" customModule="iUI" customModuleProvider="target" id="En1-cD-Oc1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L8S-Is-uUQ" firstAttribute="centerY" secondItem="fds-KW-t2Z" secondAttribute="centerY" id="7VU-co-eZu"/>
+                            <constraint firstItem="L8S-Is-uUQ" firstAttribute="centerX" secondItem="fds-KW-t2Z" secondAttribute="centerX" id="ZPD-ne-QM0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0HN-G3-cph"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fH8-v0-Ql7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488" y="345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eP4-Wx-7Zq">
+            <objects>
+                <viewController id="SfE-Hq-L06" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PUe-9h-cc7"/>
+                        <viewControllerLayoutGuide type="bottom" id="mL7-oz-vHR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QjI-us-rsk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qjd-fv-any">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Dn6-Pz-qaU">
+                            <connections>
+                                <segue destination="R7b-ih-8Ny" kind="unwind" unwindAction="dimissQuestionWindowViewController:" id="Xp9-1Z-CgD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRv-dH-llU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="R7b-ih-8Ny" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1334" y="345"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xh2-ET-whz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cit-Yb-7Hg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ic-cy-s2c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SfE-Hq-L06" kind="relationship" relationship="rootViewController" id="Uoi-ej-3Os"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPu-WZ-Mlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="345"/>
+        </scene>
+    </scenes>
+</document>

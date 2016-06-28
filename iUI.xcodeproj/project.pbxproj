@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA121A941D20627F00B339B6 /* QuestionWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA121A931D20627F00B339B6 /* QuestionWindow.storyboard */; };
+		BA121A961D20653800B339B6 /* WindowSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA121A951D20653800B339B6 /* WindowSegue.swift */; };
+		BA121A981D20685F00B339B6 /* QuestionRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA121A971D20685F00B339B6 /* QuestionRootViewController.swift */; };
+		BA121A9D1D22EBB100B339B6 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA121A9B1D22EBB100B339B6 /* CustomPresentationController.swift */; };
+		BA121A9E1D22EBB100B339B6 /* CustomPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA121A9C1D22EBB100B339B6 /* CustomPresentationAnimationController.swift */; };
 		BA22B3051C57A98B00F1058E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA22B3041C57A98B00F1058E /* AppDelegate.swift */; };
 		BA22B30A1C57A98B00F1058E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA22B3081C57A98B00F1058E /* Main.storyboard */; };
 		BA22B30C1C57A98B00F1058E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA22B30B1C57A98B00F1058E /* Assets.xcassets */; };
@@ -30,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA121A931D20627F00B339B6 /* QuestionWindow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionWindow.storyboard; sourceTree = "<group>"; };
+		BA121A951D20653800B339B6 /* WindowSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowSegue.swift; sourceTree = "<group>"; };
+		BA121A971D20685F00B339B6 /* QuestionRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRootViewController.swift; sourceTree = "<group>"; };
+		BA121A9B1D22EBB100B339B6 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
+		BA121A9C1D22EBB100B339B6 /* CustomPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationAnimationController.swift; sourceTree = "<group>"; };
 		BA22B3011C57A98A00F1058E /* iUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA22B3041C57A98B00F1058E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA22B3091C57A98B00F1058E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA121A921D2061CF00B339B6 /* Question Window */ = {
+			isa = PBXGroup;
+			children = (
+				BA121A931D20627F00B339B6 /* QuestionWindow.storyboard */,
+				BA121A9B1D22EBB100B339B6 /* CustomPresentationController.swift */,
+				BA121A9C1D22EBB100B339B6 /* CustomPresentationAnimationController.swift */,
+				BA121A951D20653800B339B6 /* WindowSegue.swift */,
+				BA121A971D20685F00B339B6 /* QuestionRootViewController.swift */,
+			);
+			name = "Question Window";
+			sourceTree = "<group>";
+		};
 		BA22B2F81C57A98A00F1058E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,7 @@
 				BA32A7201C68EA7F002AB4DB /* Trees Catalog */,
 				BA22B3181C57B04D00F1058E /* Fruit List */,
 				BAF003F71C6C971100D121C8 /* BigAlertView */,
+				BA121A921D2061CF00B339B6 /* Question Window */,
 				BA22B3081C57A98B00F1058E /* Main.storyboard */,
 				BA32A71F1C68EA70002AB4DB /* Support Files */,
 			);
@@ -227,6 +250,7 @@
 				BA22B30A1C57A98B00F1058E /* Main.storyboard in Resources */,
 				BA32A72E1C68FB78002AB4DB /* araucaria.jpg in Resources */,
 				BA32A7221C68EA99002AB4DB /* TreesCatalog.storyboard in Resources */,
+				BA121A941D20627F00B339B6 /* QuestionWindow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,12 +261,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA121A961D20653800B339B6 /* WindowSegue.swift in Sources */,
 				BAF003FD1C6CB8A700D121C8 /* BigAlertViewController.swift in Sources */,
+				BA121A9D1D22EBB100B339B6 /* CustomPresentationController.swift in Sources */,
 				BA22B3231C57D3E500F1058E /* Fruit.swift in Sources */,
 				BAF003FB1C6CB02F00D121C8 /* BigAlertViewRootViewController.swift in Sources */,
 				BA22B31F1C57D06900F1058E /* FruitListTableViewController.swift in Sources */,
 				BA32A7261C68F4E5002AB4DB /* TreesCatalogContentViewController.swift in Sources */,
+				BA121A981D20685F00B339B6 /* QuestionRootViewController.swift in Sources */,
 				BA22B3211C57D25200F1058E /* FruitTableViewCell.swift in Sources */,
+				BA121A9E1D22EBB100B339B6 /* CustomPresentationAnimationController.swift in Sources */,
 				BA32A7241C68ECB7002AB4DB /* TreesCatalogPageViewController.swift in Sources */,
 				BA22B3051C57A98B00F1058E /* AppDelegate.swift in Sources */,
 			);
